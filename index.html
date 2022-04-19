@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Count It!</title>
+</head>
+<body>
+    <h1>Count It 3!</h1>
+    <div class="container">
+        <div class="counter">
+            <div class="inputfields"> 
+                <button id="copy"><i class="far fa-copy"></i></button>
+                <label for="total">Total</label>
+                <input type="text" id="total" value="0" min="0" readonly>
+                <button id="refresh"><i class="fas fa-redo"></i></button>
+            </div>
+        </div>
+        <div class="counter bc-good">
+            <div class="inputfields">        
+                <label for="correct">Good</label>
+                <input type="number" id="good" value="0" min="0">
+            </div>
+            <div class="buttons">        
+                <button class="plus"><i class="fas fa-plus"></i></button>
+                <button class="minus"><i class="fas fa-minus"></i></button>
+            </div>
+        </div>
+        <div class="counter bc-ok">
+            <div class="inputfields">   
+                <label for="false">OK</label>
+                <input type="number" id="ok" value="0" min="0">
+            </div>
+            <div class="buttons">  
+                <button class="plus"><i class="fas fa-plus"></i></button>
+                <button class="minus"><i class="fas fa-minus"></i></button>
+            </div>
+        </div>
+        <div class="counter bc-bad">
+            <div class="inputfields">   
+                <label for="false">Bad</label>
+                <input type="number" id="bad" value="0" min="0">
+            </div>
+            <div class="buttons">  
+                <button class="plus"><i class="fas fa-plus"></i></button>
+                <button class="minus"><i class="fas fa-minus"></i></button>
+            </div>
+        </div>
+        <div class="counter bc-other">
+            <div class="inputfields">   
+                <label for="false">Other</label>
+                <input type="number" id="other" value="0" min="0">
+            </div>
+            <div class="buttons">  
+                <button class="plus"><i class="fas fa-plus"></i></button>
+                <button class="minus"><i class="fas fa-minus"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="ratio">
+        <label for="rat">Ratios</label>
+        <div id="rat"></div>
+    </div>
+    <div id="notification"></div>
+    <footer> 
+        <small>
+            © Copyright <span id="year">2022</span>, <a href="https://github.com/AlmostDeadDude" target="_blank" rel="noopener noreferrer">Ivan Shiller</a> 
+        </small> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
